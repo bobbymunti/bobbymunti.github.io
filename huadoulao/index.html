@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>花都劳务派遣-专业可靠的花都人力资源与劳务派遣服务平台</title>
+    <meta name="description" content="花都劳务派遣服务，致力于为花都及周边企业提供专业、规范、高效的人力资源解决方案。涵盖劳务派遣、岗位外包、临时用工、人事代理等服务，帮助企业优化用工成本，规避用工风险。">
+    <meta name="keywords" content="花都劳务派遣,花都劳务公司,花都临时工外包,花都人力资源,广州花都劳务派遣,劳务派遣服务,岗位外包,人事代理">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        a {
+            text-decoration: none;
+            color: #005bac;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #ff6a00;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* 头部 */
+        .site-header {
+            background: linear-gradient(135deg, #004a99 0%, #0066cc 100%);
+            color: #ffffff;
+            padding: 0;
+            box-shadow: 0 4px 12px rgba(0, 80, 160, 0.2);
+        }
+        .header-top {
+            background-color: rgba(0, 0, 0, 0.1);
+            padding: 8px 0;
+            font-size: 14px;
+            border-bottom: 1px solid rgba(255,255,255,0.15);
+        }
+        .header-top .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .header-top span {
+            margin-right: 20px;
+            opacity: 0.9;
+        }
+        .header-top a {
+            color: #ffffff;
+            margin-left: 15px;
+            opacity: 0.9;
+        }
+        .header-main {
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+        }
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: #ffffff;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 24px;
+            color: #004a99;
+            margin-right: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        .logo-text h1 {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin: 0;
+            line-height: 1.2;
+            color: #ffffff;
+        }
+        .logo-text p {
+            font-size: 13px;
+            opacity: 0.85;
+            margin-top: 4px;
+            letter-spacing: 0.5px;
+        }
+        .header-contact {
+            text-align: right;
+            font-size: 15px;
+        }
+        .header-contact .phone {
+            font-size: 22px;
+            font-weight: 700;
+            color: #ffd966;
+        }
+        .header-contact small {
+            display: block;
+            opacity: 0.8;
+        }
+        /* 导航 */
+        .main-nav {
+            background-color: #f8f9fa;
+            border-top: 1px solid #e9ecef;
+            border-bottom: 2px solid #004a99;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+        .main-nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        .nav-links li {
+            margin: 0;
+        }
+        .nav-links a {
+            display: block;
+            padding: 14px 22px;
+            font-weight: 600;
+            color: #2c3e50;
+            border-bottom: 3px solid transparent;
+            font-size: 16px;
+        }
+        .nav-links a:hover, .nav-links a.active {
+            color: #004a99;
+            border-bottom-color: #004a99;
+            background-color: #e9f0fa;
+        }
+        .nav-cta a {
+            background-color: #ff6a00;
+            color: #ffffff;
+            padding: 10px 22px;
+            border-radius: 30px;
+            font-weight: 600;
+            display: inline-block;
+            margin: 8px 0;
+            transition: background 0.3s;
+        }
+        .nav-cta a:hover {
+            background-color: #e55d00;
+            color: #ffffff;
+        }
+        /* 主横幅 */
+        .hero-section {
+            background: linear-gradient(105deg, #e8f1fa 0%, #f4f8fd 60%, #ffffff 100%);
+            padding: 50px 0;
+            border-bottom: 1px solid #e0e8f0;
+        }
+        .hero-grid {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .hero-content {
+            flex: 1 1 55%;
+        }
+        .hero-content h2 {
+            font-size: 34px;
+            line-height: 1.3;
+            color: #003366;
+            margin-bottom: 16px;
+            font-weight: 800;
+        }
+        .hero-content h2 span {
+            color: #ff6a00;
+        }
+        .hero-content p {
+            font-size: 17px;
+            color: #4a5a6a;
+            margin-bottom: 20px;
+            max-width: 600px;
+            line-height: 1.8;
+        }
+        .hero-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 25px 0;
+        }
+        .hero-feature-item {
+            background: #ffffff;
+            border-radius: 30px;
+            padding: 8px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #005bac;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            border: 1px solid #d0e0f0;
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        .btn-primary {
+            background-color: #004a99;
+            color: #ffffff;
+            padding: 13px 32px;
+            border-radius: 30px;
+            font-weight: 600;
+            display: inline-block;
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn-primary:hover {
+            background-color: #003377;
+            color: #ffffff;
+        }
+        .btn-outline {
+            background: transparent;
+            color: #004a99;
+            border: 2px solid #004a99;
+            padding: 11px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            display: inline-block;
+            transition: all 0.3s;
+            font-size: 16px;
+        }
+        .btn-outline:hover {
+            background: #004a99;
+            color: #ffffff;
+        }
+        .hero-stats {
+            flex: 1 1 35%;
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: 0 8px 30px rgba(0,80,160,0.1);
+            border: 1px solid #e0e8f0;
+        }
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #eef2f7;
+            padding: 14px 0;
+            align-items: center;
+        }
+        .stat-item:last-child {
+            border-bottom: none;
+        }
+        .stat-label {
+            color: #6c7a8a;
+            font-weight: 500;
+        }
+        .stat-value {
+            font-weight: 700;
+            color: #004a99;
+            font-size: 18px;
+        }
+        /* 服务板块 */
+        .section {
+            padding: 60px 0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .section-title h2 {
+            font-size: 30px;
+            color: #003366;
+            font-weight: 700;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 12px;
+        }
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: #ff6a00;
+            border-radius: 3px;
+        }
+        .section-title p {
+            color: #6c7a8a;
+            margin-top: 12px;
+            font-size: 16px;
+        }
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .service-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 30px 20px;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,80,160,0.1);
+            border-color: #b8d0ea;
+        }
+        .service-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+            display: block;
+        }
+        .service-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #003366;
+        }
+        .service-card p {
+            font-size: 14px;
+            color: #6c7a8a;
+            line-height: 1.6;
+        }
+        /* 关于 / 优势 */
+        .about-section {
+            background-color: #f0f5fb;
+            border-top: 1px solid #e0e8f0;
+            border-bottom: 1px solid #e0e8f0;
+        }
+        .about-flex {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .about-text {
+            flex: 1 1 50%;
+        }
+        .about-text h2 {
+            font-size: 28px;
+            color: #003366;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+        .about-text p {
+            margin-bottom: 16px;
+            color: #4a5a6a;
+        }
+        .about-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+        .about-list li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+            font-weight: 500;
+            color: #2c3e50;
+        }
+        .about-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #ff6a00;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        .about-numbers {
+            flex: 1 1 40%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .number-block {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        }
+        .number-block .num {
+            font-size: 36px;
+            font-weight: 800;
+            color: #004a99;
+        }
+        .number-block .label {
+            font-size: 14px;
+            color: #6c7a8a;
+            margin-top: 6px;
+        }
+        /* 新闻资讯 */
+        .news-section {
+            background: #ffffff;
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .news-card {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid #e9ecef;
+            transition: box-shadow 0.3s;
+        }
+        .news-card:hover {
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+        }
+        .news-card .tag {
+            display: inline-block;
+            background: #e3edf7;
+            color: #004a99;
+            font-size: 12px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .news-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #003366;
+            line-height: 1.4;
+        }
+        .news-card p {
+            font-size: 14px;
+            color: #6c7a8a;
+            margin-bottom: 12px;
+        }
+        .news-card .date {
+            font-size: 13px;
+            color: #9aa8b8;
+        }
+        /* FAQ */
+        .faq-section {
+            background-color: #f4f8fd;
+            border-top: 1px solid #e0e8f0;
+        }
+        .faq-list {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: #ffffff;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #e0e8f0;
+            overflow: hidden;
+        }
+        .faq-question {
+            padding: 20px 25px;
+            font-weight: 600;
+            color: #003366;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 17px;
+            background: #ffffff;
+            transition: background 0.2s;
+        }
+        .faq-question:hover {
+            background: #f0f5fb;
+        }
+        .faq-question .arrow {
+            color: #ff6a00;
+            font-size: 20px;
+            transition: transform 0.3s;
+        }
+        .faq-answer {
+            padding: 0 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+            border-top: 0px solid #e9ecef;
+            color: #4a5a6a;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding: 15px 25px 20px 25px;
+            border-top-width: 1px;
+        }
+        .faq-item.active .faq-question .arrow {
+            transform: rotate(45deg);
+        }
+        /* 联系 CTA */
+        .cta-section {
+            background: linear-gradient(135deg, #003366 0%, #004a99 100%);
+            padding: 50px 0;
+            color: #ffffff;
+            text-align: center;
+        }
+        .cta-section h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        .cta-section p {
+            font-size: 17px;
+            opacity: 0.9;
+            margin-bottom: 25px;
+        }
+        .cta-button {
+            background: #ff6a00;
+            color: #ffffff;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 18px;
+            display: inline-block;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .cta-button:hover {
+            background: #ff7f1f;
+            transform: scale(1.03);
+            color: #ffffff;
+        }
+        /* 页脚 */
+        .site-footer {
+            background: #1a2634;
+            color: #cbd5e0;
+            padding: 50px 0 20px;
+            font-size: 14px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .footer-about p {
+            line-height: 1.8;
+            color: #8a9bb0;
+            margin-top: 15px;
+        }
+        .footer-title {
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        .footer-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 30px;
+            height: 2px;
+            background: #ff6a00;
+        }
+        .footer-links {
+            list-style: none;
+        }
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        .footer-links a {
+            color: #8a9bb0;
+            transition: color 0.3s;
+        }
+        .footer-links a:hover {
+            color: #ffffff;
+        }
+        .footer-contact p {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .copyright {
+            border-top: 1px solid #2d3a48;
+            padding-top: 20px;
+            text-align: center;
+            color: #6c7a8a;
+        }
+        /* 响应式 */
+        @media (max-width: 992px) {
+            .service-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .news-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .hero-grid {
+                flex-direction: column;
+            }
+            .hero-content h2 {
+                font-size: 28px;
+            }
+        }
+        @media (max-width: 768px) {
+            .header-main {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+            .header-contact {
+                text-align: center;
+            }
+            .nav-links {
+                justify-content: center;
+                width: 100%;
+            }
+            .nav-links a {
+                padding: 12px 15px;
+                font-size: 15px;
+            }
+            .nav-cta {
+                margin-top: 10px;
+                width: 100%;
+                text-align: center;
+            }
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+            .about-flex {
+                flex-direction: column;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+            .hero-content h2 {
+                font-size: 24px;
+            }
+            .section {
+                padding: 40px 0;
+            }
+            .logo-text h1 {
+                font-size: 24px;
+            }
+            .nav-links a {
+                padding: 10px 10px;
+                font-size: 14px;
+            }
+        }
+        @media (max-width: 480px) {
+            .header-top .container {
+                justify-content: center;
+                gap: 5px;
+                flex-direction: column;
+            }
+            .about-numbers {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-top">
+        <div class="container">
+            <span>📞 咨询热线：020-3698 2015</span>
+            <span>⏰ 服务时间：周一至周六 8:30-18:00</span>
+            <span style="margin-left:auto;"><a href="#">企业入口</a> | <a href="#">求职登记</a></span>
+        </div>
+    </div>
+    <div class="container header-main">
+        <div class="logo-area">
+            <div class="logo-icon">花</div>
+            <div class="logo-text">
+                <h1>花都劳务派遣</h1>
+                <p>专业人力资源解决方案服务商</p>
+            </div>
+        </div>
+        <div class="header-contact">
+            <div class="phone">400-800-1234</div>
+            <small>7×24小时 专业顾问在线</small>
+        </div>
+    </div>
+</header>
+
+<nav class="main-nav">
+    <div class="container">
+        <ul class="nav-links">
+            <li><a href="#" class="active">首页</a></li>
+            <li><a href="#services">派遣服务</a></li>
+            <li><a href="#about">关于我们</a></li>
+            <li><a href="#news">资讯中心</a></li>
+            <li><a href="#faq">常见问题</a></li>
+            <li><a href="#contact">联系我们</a></li>
+        </ul>
+        <div class="nav-cta">
+            <a href="#contact">获取用工方案</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <!-- 首屏横幅 -->
+    <section class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h2>花都专业劳务派遣 <span>一站式用工服务</span></h2>
+                <p>专注花都及珠三角地区劳务派遣、岗位外包与灵活用工服务，为企业提供合规、高效、弹性的人力资源支持。降低用工成本，转移用工风险，快速响应生产与业务波动需求。</p>
+                <div class="hero-features">
+                    <span class="hero-feature-item">正规资质</span>
+                    <span class="hero-feature-item">合同保障</span>
+                    <span class="hero-feature-item">快速到岗</span>
+                    <span class="hero-feature-item">专属客服</span>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn-primary">了解派遣服务</a>
+                    <a href="#contact" class="btn-outline">免费咨询报价</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-label">合作企业</span>
+                    <span class="stat-value">300+</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">在岗派遣员工</span>
+                    <span class="stat-value">5000+</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">年服务人次</span>
+                    <span class="stat-value">20000+</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">客户满意度</span>
+                    <span class="stat-value">98%</span>
+                </div>
+                <div style="background:#f0f5fb; border-radius:8px; padding:12px; margin-top:10px; font-size:14px; color:#004a99; text-align:center;">
+                    <strong>已为多家花都制造、物流、电商企业提供派遣服务</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务内容 -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>花都劳务派遣核心服务</h2>
+                <p>根据企业需求量身定制灵活用工方案，覆盖各类岗位场景</p>
+            </div>
+            <div class="service-grid">
+                <div class="service-card">
+                    <span class="service-icon">🏭</span>
+                    <h3>制造业派遣</h3>
+                    <p>为汽车零部件、电子、家电等制造企业提供生产线操作工、质检员、仓管员等岗位派遣，适应生产节拍波动。</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">📦</span>
+                    <h3>物流仓储外包</h3>
+                    <p>电商仓储分拣、打包、装卸、配送等岗位外包，按单量灵活配置人员，提升履约效率。</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">💼</span>
+                    <h3>企业行政辅助</h3>
+                    <p>前台、文员、数据录入、客服等非核心岗位派遣，减轻人事管理负担，提升办公效率。</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🛡️</span>
+                    <h3>临时用工服务</h3>
+                    <p>大型活动、展会、短期项目等临时性用工需求，快速组织人员，按天/按周灵活结算。</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">📋</span>
+                    <h3>人事代理</h3>
+                    <p>代缴社保公积金、工资代发、档案管理等事务性工作，让企业专注于核心业务。</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">📊</span>
+                    <h3>劳务外包</h3>
+                    <p>针对特定业务模块整体外包，我方承担人员管理、质量管理与产出责任，按结果付费。</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🎓</span>
+                    <h3>实习生安置</h3>
+                    <p>与多所职业院校合作，提供实习生批量输送与实习管理服务，解决阶段性用人需求。</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">⚖️</span>
+                    <h3>用工合规咨询</h3>
+                    <p>提供劳动合同签订、工伤处理、离职管理等方面的法律与合规咨询，降低用工风险。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 为什么选择我们 -->
+    <section class="section about-section" id="about">
+        <div class="container about-flex">
+            <div class="about-text">
+                <h2>深耕花都本地，更懂企业用工需求</h2>
+                <p>花都地处广州北部，拥有汽车产业基地、空港经济区以及众多制造与物流企业。我们扎根花都，熟悉本地劳动力市场特点与各行业用工规律，能够快速匹配适合的人才。</p>
+                <ul class="about-list">
+                    <li>严格筛选与岗前培训，保障人员素质</li>
+                    <li>签订正规劳动合同，依法缴纳社保</li>
+                    <li>专人驻场管理，及时处理突发情况</li>
+                    <li>灵活调整人员规模，适应业务淡旺季</li>
+                    <li>完善的工伤与意外保险方案</li>
+                </ul>
+                <p>我们致力于成为企业长期可信赖的人力资源合作伙伴，不仅提供人员，更提供一套合规、高效、可持续的用工管理体系。</p>
+            </div>
+            <div class="about-numbers">
+                <div class="number-block">
+                    <div class="num">10+</div>
+                    <div class="label">年行业经验</div>
+                </div>
+                <div class="number-block">
+                    <div class="num">50+</div>
+                    <div class="label">专业服务团队</div>
+                </div>
+                <div class="number-block">
+                    <div class="num">300+</div>
+                    <div class="label">服务企业客户</div>
+                </div>
+                <div class="number-block">
+                    <div class="num">5</div>
+                    <div class="label">大核心服务区域</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 资讯中心 -->
+    <section class="section news-section" id="news">
+        <div class="container">
+            <div class="section-title">
+                <h2>劳务派遣资讯与指南</h2>
+                <p>了解最新政策法规与行业动态，帮助企业做出更明智的用工决策</p>
+            </div>
+            <div class="news-grid">
+                <article class="news-card">
+                    <span class="tag">政策解读</span>
+                    <h3>劳务派遣与劳务外包的区别及合规要点</h3>
+                    <p>很多企业容易混淆派遣与外包的概念。本文梳理两者在法律关系、管理责任、税务处理上的核心差异，帮助企业合规选择。</p>
+                    <span class="date">2025-04-10</span>
+                </article>
+                <article class="news-card">
+                    <span class="tag">用工指南</span>
+                    <h3>花都制造企业如何应对季节性用工高峰</h3>
+                    <p>汽车零部件与家电企业常面临订单波动。通过科学的派遣用工规划，可以在保障产能的同时控制人力成本。</p>
+                    <span class="date">2025-03-28</span>
+                </article>
+                <article class="news-card">
+                    <span class="tag">风险防范</span>
+                    <h3>派遣员工工伤事故处理流程与风险规避</h3>
+                    <p>用工安全是派遣合作中的重中之重。了解工伤认定流程、保险配置及现场处置要点，减少企业后顾之忧。</p>
+                    <span class="date">2025-03-15</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq-section" id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>企业常见问题解答</h2>
+                <p>关于花都劳务派遣，您可能关心的问题</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item active">
+                    <div class="faq-question">劳务派遣与正式员工有什么区别？ <span class="arrow">+</span></div>
+                    <div class="faq-answer">劳务派遣人员与派遣公司建立劳动关系，由派遣公司负责薪酬发放、社保缴纳等事宜，用工企业只负责日常管理和工作任务分配。这种模式适合临时性、辅助性或替代性岗位，可帮助企业灵活调整人力规模。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">选择劳务派遣公司需要注意什么？ <span class="arrow">+</span></div>
+                    <div class="faq-answer">首先要确认派遣公司是否具有《劳务派遣经营许可证》；其次了解其是否依法为员工缴纳社保；还要关注其人员储备、招聘能力和应急处理机制。建议实地考察服务团队，并查看合作案例。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">派遣员工发生工伤如何处理？ <span class="arrow">+</span></div>
+                    <div class="faq-answer">派遣员工的工伤认定与赔偿由派遣公司负责申请和协调。正规派遣公司会为员工缴纳工伤保险，并配备额外的商业意外险。发生事故后，用工企业需第一时间配合现场处置和证据收集。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">企业可以随时退回派遣员工吗？ <span class="arrow">+</span></div>
+                    <div class="faq-answer">根据相关法律规定，用工企业不能随意退回派遣员工。只有在派遣协议约定的情形下（如员工严重违纪、不能胜任工作等）才可退回。建议在协议中明确退回条件和流程，避免争议。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">派遣服务如何收费？ <span class="arrow">+</span></div>
+                    <div class="faq-answer">收费一般包含员工工资、社保费用以及服务管理费三部分。管理费根据岗位性质、用工人数和合作期限综合确定。我们提供透明报价，无任何隐藏费用，具体可联系顾问获取方案。</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系 CTA -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <h2>需要劳务派遣方案？立即咨询我们的顾问</h2>
+            <p>免费为企业评估用工现状，提供合规且成本优化的派遣建议</p>
+            <a href="tel:4008001234" class="cta-button">📞 拨打 400-800-1234</a>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <h3 style="color:#ffffff; font-size:20px; margin-bottom:5px;">花都劳务派遣</h3>
+                <p>专业的人力资源服务提供商，专注花都及周边地区劳务派遣、岗位外包、人事代理等服务。我们以合规经营为基石，以客户需求为导向，助力企业构建灵活高效的用工体系。</p>
+            </div>
+            <div>
+                <h4 class="footer-title">快速导航</h4>
+                <ul class="footer-links">
+                    <li><a href="#services">劳务派遣服务</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                    <li><a href="#news">行业资讯</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                    <li><a href="#contact">联系咨询</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">服务区域</h4>
+                <ul class="footer-links">
+                    <li><a href="#">花都新华街</a></li>
+                    <li><a href="#">狮岭镇</a></li>
+                    <li><a href="#">汽车产业基地</a></li>
+                    <li><a href="#">空港经济区</a></li>
+                    <li><a href="#">花东镇</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4 class="footer-title">联系方式</h4>
+                <p>📍 广州市花都区迎宾大道123号</p>
+                <p>📞 400-800-1234</p>
+                <p>✉️ hr@huadupaiqian.com</p>
+                <p>🕐 周一至周六 8:30-18:00</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 花都劳务派遣专业服务平台 | 粤ICP备20xxxxxx号-1</p>
+            <p style="margin-top:5px; font-size:12px; color:#5a6a7a;">本站提供劳务派遣与人力资源服务信息，派遣业务由具备资质的人力资源服务机构提供。</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // FAQ 折叠交互
+    document.querySelectorAll('.faq-question').forEach(function(question) {
+        question.addEventListener('click', function() {
+            var item = this.parentElement;
+            // 关闭其他项
+            document.querySelectorAll('.faq-item').forEach(function(otherItem) {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                }
+            });
+            item.classList.toggle('active');
+        });
+    });
+</script>
+
+</body>
+  </html>
