@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高纯氢气-行业应用与安全使用综合指南</title>
+    <meta name="description" content="高纯氢气是半导体、光纤、精细化工及氢能产业的关键工业气体。本页面提供高纯氢气的纯度标准、制备技术、应用场景及安全操作指南，帮助用户更深入了解并合理选用高纯氢气。">
+    <meta name="keywords" content="高纯氢气,氢气纯度,高纯氢应用,氢气制备,氢气安全,电子级氢气,氢能,工业气体">
+    <link rel="stylesheet" href="data:text/css,">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+            background-color: #f4f7fa;
+            color: #1e2a3a;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header */
+        .site-header {
+            background: linear-gradient(135deg, #0b2b40 0%, #123b5c 100%);
+            color: #ffffff;
+            padding: 20px 0;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .logo-area h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #fff;
+            margin: 0;
+            line-height: 1.2;
+        }
+        .logo-area p {
+            font-size: 0.9rem;
+            color: #cbd5e0;
+            margin-top: 4px;
+        }
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+        .main-nav a {
+            color: #e2e8f0;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            padding: 6px 0;
+            border-bottom: 2px solid transparent;
+            transition: 0.2s;
+        }
+        .main-nav a:hover {
+            color: #ffffff;
+            border-bottom-color: #38bdf8;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(180deg, #eef6fb 0%, #dcebf5 100%);
+            padding: 48px 0 40px;
+        }
+        .hero .container {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .hero-text {
+            flex: 1 1 360px;
+        }
+        .hero-text h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #0b2b40;
+            margin-bottom: 16px;
+            line-height: 1.3;
+        }
+        .hero-text p {
+            font-size: 1.1rem;
+            color: #2d4a5e;
+            margin-bottom: 24px;
+        }
+        .hero-stats {
+            display: flex;
+            gap: 32px;
+            flex-wrap: wrap;
+            margin-bottom: 24px;
+        }
+        .stat-item {
+            background: #ffffff;
+            padding: 12px 28px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            text-align: center;
+        }
+        .stat-item strong {
+            font-size: 1.5rem;
+            color: #0b2b40;
+            display: block;
+        }
+        .stat-item span {
+            font-size: 0.85rem;
+            color: #4a657a;
+        }
+        .btn-group {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 32px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: 0.2s;
+        }
+        .btn-primary {
+            background: #0b2b40;
+            color: #fff;
+            border: 1px solid #0b2b40;
+        }
+        .btn-primary:hover {
+            background: #123b5c;
+            border-color: #123b5c;
+        }
+        .btn-outline {
+            background: transparent;
+            color: #0b2b40;
+            border: 1px solid #0b2b40;
+        }
+        .btn-outline:hover {
+            background: #ffffff;
+        }
+        .hero-visual {
+            flex: 1 1 260px;
+            min-height: 180px;
+            background: rgba(255,255,255,0.6);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255,255,255,0.8);
+        }
+        .hero-visual .molecule-symbol {
+            font-size: 4.2rem;
+            font-weight: 700;
+            color: #1e3a5f;
+            letter-spacing: 4px;
+            font-family: "Courier New", monospace;
+        }
+
+        /* Sections */
+        .section {
+            padding: 48px 0;
+        }
+        .section-title {
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: #0b2b40;
+            margin-bottom: 12px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        .section-title::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60px;
+            height: 4px;
+            background: #38bdf8;
+            border-radius: 4px;
+        }
+        .section-sub {
+            font-size: 1rem;
+            color: #4a657a;
+            margin-bottom: 32px;
+        }
+
+        /* cards grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 28px 24px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+            border: 1px solid #e8f0f5;
+            transition: 0.2s;
+        }
+        .card:hover {
+            box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+            transform: translateY(-4px);
+        }
+        .card-icon {
+            font-size: 2rem;
+            margin-bottom: 12px;
+            display: block;
+        }
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #0b2b40;
+        }
+        .card p {
+            font-size: 0.95rem;
+            color: #3d5a70;
+        }
+
+        /* Two column layout */
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            align-items: start;
+        }
+        .info-block {
+            background: #fff;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+            border: 1px solid #e2edf3;
+        }
+        .info-block h3 {
+            font-size: 1.4rem;
+            color: #0b2b40;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .info-block ul {
+            list-style: none;
+        }
+        .info-block li {
+            padding: 8px 0;
+            border-bottom: 1px solid #ecf3f8;
+            display: flex;
+            gap: 12px;
+            font-size: 0.95rem;
+            color: #2d4a5e;
+        }
+        .info-block li:last-child {
+            border-bottom: none;
+        }
+        .badge {
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            white-space: nowrap;
+            height: fit-content;
+        }
+
+        /* Table */
+        .table-wrapper {
+            overflow-x: auto;
+            background: #fff;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }
+        th {
+            background: #f0f7fb;
+            color: #0b2b40;
+            text-align: left;
+            padding: 12px 16px;
+            font-weight: 600;
+            border-bottom: 2px solid #d4e6f0;
+        }
+        td {
+            padding: 12px 16px;
+            border-bottom: 1px solid #e6eef4;
+            color: #2d4a5e;
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Steps */
+        .steps-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .step-item {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            background: #f8fbfd;
+            padding: 16px 20px;
+            border-radius: 12px;
+            border-left: 4px solid #38bdf8;
+        }
+        .step-num {
+            background: #0b2b40;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+        .step-content {
+            flex: 1;
+        }
+        .step-content h4 {
+            font-size: 1rem;
+            color: #0b2b40;
+            margin-bottom: 4px;
+        }
+        .step-content p {
+            font-size: 0.9rem;
+            color: #3d5a70;
+        }
+
+        /* FAQ */
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .faq-item {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px 24px;
+            border: 1px solid #e2edf3;
+        }
+        .faq-item h4 {
+            font-size: 1.05rem;
+            color: #0b2b40;
+            margin-bottom: 6px;
+        }
+        .faq-item p {
+            font-size: 0.95rem;
+            color: #3d5a70;
+        }
+
+        /* CTA */
+        .cta-banner {
+            background: #0b2b40;
+            border-radius: 20px;
+            padding: 40px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+        .cta-banner h3 {
+            font-size: 1.6rem;
+            margin-bottom: 8px;
+        }
+        .cta-banner p {
+            color: #cbd5e0;
+        }
+
+        /* Footer */
+        .site-footer {
+            background: #0b1e2c;
+            color: #a0b3c4;
+            padding: 32px 0;
+            margin-top: 48px;
+        }
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+        .footer-brand h3 {
+            color: #ffffff;
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+        }
+        .footer-links ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .footer-links a {
+            color: #a0b3c4;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .footer-links a:hover {
+            color: #fff;
+        }
+        .copyright {
+            text-align: center;
+            padding-top: 24px;
+            border-top: 1px solid #1e3a4d;
+            margin-top: 24px;
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero .container {
+                flex-direction: column;
+                gap: 24px;
+            }
+            .hero-text h2 {
+                font-size: 1.8rem;
+            }
+            .two-col {
+                grid-template-columns: 1fr;
+            }
+            .header-inner {
+                flex-direction: column;
+                gap: 16px;
+                text-align: center;
+            }
+            .main-nav ul {
+                justify-content: center;
+                gap: 16px;
+            }
+            .section {
+                padding: 32px 0;
+            }
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            .cta-banner {
+                padding: 28px;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+            .hero-stats {
+                gap: 16px;
+            }
+            .stat-item {
+                padding: 10px 18px;
+            }
+            .btn-group {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo-area">
+                <h1>高纯氢气</h1>
+                <p>工业气体综合服务平台</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">纯度标准</a></li>
+                    <li><a href="#">制备技术</a></li>
+                    <li><a href="#">应用领域</a></li>
+                    <li><a href="#">安全指南</a></li>
+                    <li><a href="#">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-text">
+                    <h2>高纯氢气：电子与能源产业的关键气体</h2>
+                    <p>高纯氢气通常指纯度≥99.999%的氢气，广泛应用于半导体制造、光纤生产、精细化工和氢能系统。了解其标准、制备与安全使用方法，是相关行业技术人员与采购人员的必修课。</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <strong>99.999%</strong>
+                            <span>典型纯度级别</span>
+                        </div>
+                        <div class="stat-item">
+                            <strong>5N/6N</strong>
+                            <span>常见规格</span>
+                        </div>
+                        <div class="stat-item">
+                            <strong>多领域</strong>
+                            <span>应用覆盖</span>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-primary">获取技术选型建议</a>
+                        <a href="#" class="btn btn-outline">下载安全手册</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <span class="molecule-symbol">H₂</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 纯度标准 -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">高纯氢气纯度等级与标准</h2>
+                <p class="section-sub">不同应用场景对氢气纯度要求差异明显，了解分级体系是合理选用的第一步。</p>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>纯度等级</th>
+                                <th>氢气含量</th>
+                                <th>主要杂质限制</th>
+                                <th>典型应用</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>工业纯氢</td>
+                                <td>≥99.9%</td>
+                                <td>O₂ ≤ 50 ppm, H₂O ≤ 100 ppm</td>
+                                <td>金属热处理、浮法玻璃</td>
+                            </tr>
+                            <tr>
+                                <td>高纯氢 (3N5)</td>
+                                <td>≥99.95%</td>
+                                <td>N₂ ≤ 300 ppm, O₂ ≤ 20 ppm</td>
+                                <td>化工还原、加氢反应</td>
+                            </tr>
+                            <tr>
+                                <td>超高纯氢 (5N)</td>
+                                <td>≥99.999%</td>
+                                <td>总杂质 ≤ 10 ppm</td>
+                                <td>半导体外延、电子器件</td>
+                            </tr>
+                            <tr>
+                                <td>电子级氢 (6N)</td>
+                                <td>≥99.9999%</td>
+                                <td>总杂质 ≤ 1 ppm, 金属离子ppt级</td>
+                                <td>集成电路制造、光纤预制棒</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 制备技术 -->
+        <section class="section" style="background: #f0f7fb;">
+            <div class="container">
+                <h2 class="section-title">高纯氢气主要制备与提纯方法</h2>
+                <p class="section-sub">工业上通过多种工艺组合实现氢气的高纯度化，每种技术各有优势场景。</p>
+                <div class="cards-grid">
+                    <div class="card">
+                        <span class="card-icon">⚡</span>
+                        <h3>电解水制氢</h3>
+                        <p>纯水电解产生氢气纯度可达99.9%~99.999%，配合催化除氧和干燥可进一步提升。适合中小规模、对纯度要求高的场景。</p>
+                    </div>
+                    <div class="card">
+                        <span class="card-icon">🔥</span>
+                        <h3>甲醇裂解+变压吸附</h3>
+                        <p>甲醇裂解气经变压吸附（PSA）提纯，可获得99.99%以上纯度的氢气。经济性好，适合中等规模连续供气。</p>
+                    </div>
+                    <div class="card">
+                        <span class="card-icon">🧪</span>
+                        <h3>钯膜扩散法</h3>
+                        <p>利用钯合金膜对氢的选择性渗透，可一步获得6N级超高纯氢气。但成本较高，多用于半导体等高端领域。</p>
+                    </div>
+                    <div class="card">
+                        <span class="card-icon">🔄</span>
+                        <h3>金属氢化物纯化</h3>
+                        <p>利用储氢合金选择性吸放氢特性，有效去除杂质。适合小流量、超高纯场景，常用于实验室或特种工艺。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 应用领域 + 安全 -->
+        <section class="section">
+            <div class="container">
+                <div class="two-col">
+                    <div class="info-block">
+                        <h3>🔬 核心应用领域</h3>
+                        <ul>
+                            <li><span class="badge">半导体</span> 外延生长、氧化退火、载气</li>
+                            <li><span class="badge">光纤通信</span> 光纤预制棒脱水烧结</li>
+                            <li><span class="badge">精细化工</span> 加氢反应、催化剂还原</li>
+                            <li><span class="badge">氢能产业</span> 燃料电池用氢、加氢站</li>
+                            <li><span class="badge">冶金工业</span> 金属粉末还原、保护气氛</li>
+                            <li><span class="badge">科研实验</span> 标准气配制、分析仪器</li>
+                        </ul>
+                    </div>
+                    <div class="info-block">
+                        <h3>⚠️ 安全使用要点</h3>
+                        <ul>
+                            <li>氢气的爆炸极限范围宽（4%~75%），务必严格通风</li>
+                            <li>使用区域应安装氢气浓度检测报警器</li>
+                            <li>所有管路阀门需采用防泄漏设计与材质</li>
+                            <li>操作人员必须经过专业安全培训</li>
+                            <li>存储区域远离氧化剂和火源，避免阳光直射</li>
+                            <li>建议使用不锈钢或铜合金管路，禁用普通橡胶</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 选型指南 -->
+        <section class="section" style="background: #f0f7fb;">
+            <div class="container">
+                <h2 class="section-title">高纯氢气选型与采购步骤</h2>
+                <p class="section-sub">从需求确认到稳定供应，系统化的选型流程能有效降低风险与成本。</p>
+                <div class="steps-list">
+                    <div class="step-item">
+                        <div class="step-num">1</div>
+                        <div class="step-content">
+                            <h4>明确纯度需求</h4>
+                            <p>根据具体工艺对杂质敏感度，确定所需纯度等级（如5N或6N），避免过度采购造成浪费。</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-num">2</div>
+                        <div class="step-content">
+                            <h4>评估用量与供应模式</h4>
+                            <p>测算连续或间歇用量，选择钢瓶、集装格、长管拖车或现场制氢等不同供应方案。</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-num">3</div>
+                        <div class="step-content">
+                            <h4>确认杂质指标</h4>
+                            <p>除纯度外，关注关键杂质如O₂、H₂O、N₂、CO、CO₂及总烃的具体限量要求。</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-num">4</div>
+                        <div class="step-content">
+                            <h4>供应商资质审核</h4>
+                            <p>核实供应商的气体生产许可、分析报告、充装记录及质量管理体系，可进行现场审计。</p>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-num">5</div>
+                        <div class="step-content">
+                            <h4>制定验收与检测流程</h4>
+                            <p>建立入厂检验标准，使用气相色谱仪等设备验证纯度，并定期送第三方检测。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题 -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">关于高纯氢气的常见问题</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h4>高纯氢气和普通氢气有什么区别？</h4>
+                        <p>主要区别在于杂质含量控制水平。高纯氢气通常指纯度≥99.999%，对氧、水、碳氢化合物等杂质有严格限制，适用于对洁净度要求极高的电子级工艺；普通氢气纯度较低，适合一般工业用途。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>如何检测高纯氢气的实际纯度？</h4>
+                        <p>常用气相色谱法（GC）配合氦离子化检测器（PDHID）或火焰离子化检测器（FID）进行痕量杂质分析，也可使用微量氧分析仪、露点仪等专用设备。建议委托具备CMA/CNAS资质的实验室检测。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>高纯氢气可以储存在普通钢瓶中吗？</h4>
+                        <p>储存高纯氢气需要使用经过特殊处理的高纯气体钢瓶，内壁通常经过抛光或涂层处理，并配置高纯阀门，防止气体污染。普通钢瓶的锈蚀和残留杂质会影响氢气纯度。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>高纯氢气在半导体制造中有何不可替代的作用？</h4>
+                        <p>在半导体工艺中，高纯氢气用作外延生长的载气、还原气体，以及氧化工艺中的气氛控制。其纯度直接影响晶圆表面缺陷和器件性能，因此要求极高，通常需达到6N以上纯度。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>氢能汽车使用的氢气必须达到什么纯度？</h4>
+                        <p>车用燃料电池氢气需符合国家标准GB/T 37244-2018，要求氢气纯度≥99.97%，且对一氧化碳、硫化物等毒化催化剂的杂质有极严格限制，以保证燃料电池性能和寿命。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section">
+            <div class="container">
+                <div class="cta-banner">
+                    <div>
+                        <h3>需要高纯氢气供应解决方案？</h3>
+                        <p>联系专业技术团队，获取气体选型建议、供应方案及安全培训支持。</p>
+                    </div>
+                    <a href="#" class="btn btn-primary" style="background:#38bdf8; border-color:#38bdf8; color:#0b2b40;">咨询专家</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <h3>高纯氢气指南</h3>
+                    <p>致力于提供客观、严谨的工业气体知识平台</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">气体百科</a></li>
+                        <li><a href="#">行业资讯</a></li>
+                        <li><a href="#">联系合作</a></li>
+                        <li><a href="#">法律声明</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 高纯氢气行业信息站 · 仅供技术交流参考，具体参数请以官方标准为准
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
